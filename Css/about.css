@@ -1,0 +1,311 @@
+:root {
+  --red: #E85854; 
+ 
+  
+}
+:root{
+  --gray: #DFDFDF;
+}
+:root{
+  --card: #fff; 
+}
+:root{
+  --black: #000000;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* change this to match your background color */
+  z-index: 9999; /* make sure the header stays on top of other elements */
+}
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+/* Navigation */
+
+.navbar-nav {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .fm {
+    margin-left: auto;
+  }
+
+  .navbar-nav li {
+    position: relative;
+    text-decoration: none;
+    color: rgb(210, 32, 32);
+    font-size: 20px;
+    letter-spacing: 0, 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .navbar-nav li::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(243, 29, 29);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  .navbar-nav li:hover {
+    color: rgb(54, 10, 10);
+  }
+
+  .navbar-nav li:hover:after {
+    width: 100%;
+  }
+ /* body */
+ .about{
+    width: 100%;
+    height: 400px;
+    top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color :black;
+    margin: auto;
+    background-image: url(../img/About/about.png)
+  }
+  
+  .content{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+    justify-content: center ;
+    font-size: 20px; 
+    height: 100%;
+  }
+  
+.content p{  
+font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+
+
+.item-1 p{
+  width: 100%;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    /* margin: auto; */
+    flex-wrap: wrap;
+}
+
+
+.display-grid{
+    display: flex;
+    grid-template-columns: 400px 1fr;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inline-block{
+    display: inline-block;
+    padding:20px;
+    margin:10px; 
+    
+  
+}
+.item-1{
+    align-items: center;
+    margin-top: 100px;
+    padding-left: 100px;
+    width: 100%;
+    color:rgb(0, 0, 0);
+}
+
+.item-1 p{
+ padding-top:10px;
+ display: flex;
+ text-align: start;
+}
+
+
+
+.item-1 h1{
+    text-align: justify;
+    padding-right:10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;   
+}
+
+
+/* button */
+.button{
+  width: 150px;
+  height: 50px;
+  background-color: var(--red);
+  border-radius: 10px;
+  border: none;
+  color: var(--card);
+  margin-left: 0px;
+  
+}
+.button:hover{
+  color: white; 
+transform: scale(1.05); /* increase size on hover */
+transition-timing-function: ease-in-out;
+}
+  /* end */
+.item-2> img{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 2px;  
+       
+}
+.creator{
+    text-align: center;   
+    text-decoration: underline;   
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+
+}
+.box-item{
+    margin-top: 40px;
+    display: flex;
+    background-position: center;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card >h4{
+    text-align: center;
+}
+.card-text{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.col-lg-3> img{   
+   margin-left: 60px;
+   width: 250px;
+   height: 60px;
+  
+}
+/* footer */
+.col-lg-3> img{   
+    margin-left: 60px;
+    width: 250px;
+    height: 60px;
+   
+  }
+  .content_foo{
+     margin-top:20px;
+     font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  }
+  .bd-footer a {
+    font-family: 'Nunito';
+  font-style:normal;
+  opacity: 50%;
+  font-weight: 100;
+  font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .bd-footer a:hover {
+    color: red;
+    opacity: 100%;
+  }
+
+
+
+/* card */
+/* Demo Margin */
+
+  
+  /* This may not be needed depending on if you want to restrict the card size*/
+  .card{
+    width: 300px;
+    height: 500px;  
+}
+  
+  .card-image-wrapper {
+    border-radius: 10px;
+    display: flex;
+    /* Just to show the size of the image wrapper */
+    background-color: darkgrey;
+  }
+  
+  .card-img-top {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+  
+  .ic{
+    font-size: 30px;
+  }
+  
+
+
+   /* Large devices (desktops, 992px and up) */
+   @media (min-width: 992px) {
+    
+  }
+
+  
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .item-2> img{
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+      border-radius: 2px;     
+  }
+
+  
+  }
+
+
+.cs{
+  display: flex;
+}
