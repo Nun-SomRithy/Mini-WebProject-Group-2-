@@ -175,8 +175,13 @@ hr{
     text-align: center;
     opacity: 50px;
 }
-small{
+a{
     color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .card-text{

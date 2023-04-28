@@ -167,7 +167,22 @@ b{
     line-height: 29px;
     padding-right: 6px;
 }
-/* button */    
+/* button */   
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: none;
+    color: var(--card);
+    margin-left: 0px;
+    
+}
+.button:hover{
+    color: white; 
+  transform: scale(1.05); /* increase size on hover */
+  transition-timing-function: ease-in-out;
+} 
 
 .btcolor{
     width: 150px;
